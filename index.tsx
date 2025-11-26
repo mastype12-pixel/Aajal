@@ -5,7 +5,8 @@ import App from './App';
 // Service Worker Registration
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
+    // Removed leading slash to support GitHub Pages sub-directory
+    navigator.serviceWorker.register('sw.js')
       .then(registration => {
         console.log('SW registered: ', registration);
       })

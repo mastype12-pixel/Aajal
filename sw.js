@@ -1,8 +1,9 @@
 const CACHE_NAME = 'judicial-deadlines-v1';
+// Updated to relative paths for GitHub Pages support
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.json'
+  './',
+  './index.html',
+  './manifest.json'
 ];
 
 self.addEventListener('install', (event) => {
